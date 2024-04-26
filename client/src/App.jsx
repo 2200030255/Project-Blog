@@ -15,6 +15,8 @@ import EditProfile from "./pages/edit-profile.page";
 import Notification from "./pages/notifications.page";
 import ManageBlog from "./pages/manage-blogs.page";
 
+
+
 export const UserContext = createContext({})
 
 export const ThemeContext = createContext({})
@@ -44,6 +46,7 @@ const App = () => {
     },[])
     // console.log(userAuth)
     return (
+        
         <ThemeContext.Provider value={{theme, setTheme}}>
             <UserContext.Provider value={{userAuth, setUserAuth}}>
                 <Routes>
